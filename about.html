@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tugas Akhir Membuat Website</title>
+</head>
+<body>
+    <header>
+       <div class="cop">
+        <p id="date"></p>
+        <p id="lokasi">Bali, Indonesia</p>
+       </div>
+        <div class="navbar">
+            <a href="index.html"><h2>Mr. Grandong</h2></a>
+            <a href="about.html"><h2>About</h2></a>
+            <a href="project.html"><h2>Project</h2></a>
+        </div>
+    </header>
+    <main>
+            <div id="content">
+                <div>
+                    <article>
+                        <div class="title">
+                            <h1>Article 1</h1>
+                        </div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, perferendis temporibus explicabo id sunt vero numquam laborum saepe? In corrupti enim incidunt ipsum cumque voluptatibus similique quo, veniam perspiciatis natus.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ea, quos autem dolor laudantium sunt architecto consectetur, perspiciatis ex eligendi, amet id dolores tempore cum dicta deleniti doloribus provident. Accusantium?
+                    </article>
+                    <article>
+                        <div class="title">
+                            <h1>Article 2</h1>
+                        </div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iste officia nisi perspiciatis doloremque possimus autem ipsa at sunt sit unde obcaecati quo, sint amet officiis, inventore, corrupti quis ipsum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quas voluptates expedita sed dolores necessitatibus animi vero officia praesentium recusandae culpa soluta dolorum distinctio, veniam non saepe quaerat laboriosam nesciunt!
+                    </article>
+                </div>
+            </div>
+            <aside>
+                <div class="biodata-card">
+                    <div class="me">
+                        <img src="me.jpg" alt="Your Photo">
+                    </div>
+                        <h3>I Putu Agus Eka Cahyadi</h3>
+                        <p class="tagline">Aspiring Web Developer | Creative Thinker</p>
+
+                    <div class="section">
+                        <h3>Personal Information</h3>
+                            <ul>
+                                <li><strong>Date of Birth:</strong> 10 Aug 2000</li>
+                                <li><strong>Gender:</strong> Male</li>
+                                <li><strong>Nationality:</strong> Indonesia</li>
+                                <li><strong>Marital Status:</strong> Single</li>
+                            </ul>
+                    </div>
+
+                    <div class="section">
+                        <h3>Contact Information</h3>
+                            <ul>
+                                <li><strong>Email:</strong> iputuagusekacahyadi@gmail.com</li>
+                                <li><strong>Phone:</strong> +6282144068203</li>
+                                <li><strong>Address:</strong> Jl. Pulau Moyo No. VII E, Pedungan, Denpasar Selatan</li>
+                            </ul>
+                    </div>
+
+                    <div class="section">
+                        <h3>Education</h3>
+                            <ul>
+                                <li><strong>Associate Degree</strong> – Bali State Polytechnic (2019-2022)</li>
+                                <li><strong>High School</strong> – SMK N 3 Singaraja</li>
+                            </ul>
+                    </div>
+                </div>
+        </aside>
+    </main>
+    <footer>
+        <p>© 2025 Mr.Grandong. Built with ❤️ using Flexbox.</p>
+    </footer>
+
+<script>
+  const dateElement = document.getElementById('date');
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const today = new Date().toLocaleDateString(undefined, options);
+  dateElement.textContent = today;
+</script>
+</body>
+</html>
