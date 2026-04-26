@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Inventory</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    input, button { padding: 8px; margin: 5px; }
+    table { border-collapse: collapse; width: 50%; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+  </style>
+</head>
+<body>
+
+<h2>Inventory App</h2>
+
+<input type="text" id="name" placeholder="Item name">
+<input type="number" id="qty" placeholder="Quantity">
+<button onclick="addItem()">Add Item</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Qty</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="inventoryTable"></tbody>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
